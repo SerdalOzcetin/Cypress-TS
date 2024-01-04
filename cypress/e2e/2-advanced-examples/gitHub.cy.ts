@@ -1,9 +1,8 @@
-import  from "../../support/index"
 describe('Cy.session',()=>{
 
 
     beforeEach(() => {
-        cy.login("özçetinserdal@gmail.com","Qazwsxedc22##")
+        cy.login("","")
     });
     
     
