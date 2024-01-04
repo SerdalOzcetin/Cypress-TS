@@ -93,7 +93,7 @@ context('Cookies', () => {
 
     cy.get('#clearCookies .set-a-cookie').click()
 
-    cy.getCookies().should('have.length', 1)
+    cy.getAllCookies().should('have.length', 1)
 
     // cy.clearCookies() yields null
     cy.clearCookies()
@@ -106,7 +106,7 @@ context('Cookies', () => {
     cy.getAllCookies().should('be.empty')
 
     cy.setCookie('key', 'value')
-    cy.setCookie('key', 'value', { domain: '.example.com' })
+    cy.setCookie('key', 'value', { domain:'.example.com' })
 
     cy.getAllCookies().should('have.length', 2)
 
